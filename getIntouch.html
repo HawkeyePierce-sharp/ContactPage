@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get in touch!</title>
+  <style>
+    body {
+      padding: 20px;
+      margin: 0;
+      height: 100vh;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, #db5626, #07368d);
+      color: white;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.9);
+      font-family: sans-serif;
+      color: #333;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: linear-gradient(to right, #e91e63, #f06292);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #c2185b, #ec407a);
+      color: black;
+    }
+    .navbar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background:rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        .navbar ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover{
+            color: #f06292;
+        }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+        <li><a href="UeberMich.html">Home</a></li>
+        <li><a href="getIntouch.html">Kontakt</a></li>
+    </ul>
+</nav>
+  <div class="wrapper">
+    <h1>Please use this form to get in touch with me :D</h1>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Nachricht:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+  </div>
+</body>
+</html>

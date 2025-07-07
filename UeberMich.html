@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über Mich</title>
+    <style>
+        @keyframes gradientShift{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+        body {
+          margin: 0;
+          height: 100vh;
+          background: linear-gradient(290deg, #db5626, #07368d);
+          color: white;
+          font-family: sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .container{
+            text-align: center;
+        }
+        .bottom-left-button{
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            border-radius: 10px;
+            font-family: sans-serif;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            cursor: pointer;
+            border: 2px solid transparent;
+
+            background: linear-gradient(to left, rgb(217, 40, 164), rgb(247, 39, 84));
+            background-size: 600% 600%;
+        
+            transition: transform 0.1s ease;
+
+            animation: gradientShift 4s ease infinite;
+        }
+        .bottom-left-button:hover{
+            box-shadow: 0 4px 10px rgba(247, 39, 84, 0.6);
+            color: white;
+        }
+        .bottom-left-button:active{
+            transform: scale(0.95);
+        }
+        .navbar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background:rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        .navbar ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover{
+            color: #f06292;
+        }
+      </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="UeberMich.html">Home</a></li>
+            <li><a href="getIntouch.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+        <h1>Hi, ich bin Jannek!</h1>
+        <p>Ein Webentwickler in Ausbildung :D</p> 
+        </header>
+        <section>
+        <h2>Über mich</h2>
+        <p>Ich lerne gerade HTML & CSS und baue meine eigene Website auf.</p>
+        </section>
+    </div>
+</body>
+</html>

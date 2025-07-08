@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine Projekte</title>
+    <style>
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* horizontal */
+        align-items: center;     /* vertikal */
+        height: 100vh;           /* volle Bildschirmhöhe */
+    }
+    .title h1{
+        margin-bottom: 10px;
+    }
+    .title p{
+        margin-top: 0px;
+    }
+    body{
+        margin: 0;
+        background: linear-gradient(290deg,#07368d, #db5626);
+        background-attachment: fixed;
+        color: white;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background:rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+    .navbar ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 30px;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    .navbar a:hover{
+        color: #f06292;
+    }
+    .project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 280px;
+    margin-bottom: 80px;
+    color: white;
+    }
+    .httpbild{
+        display: block;
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    </style>
+    
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="UeberMich.html">Home</a></li>
+            <li><a href="getIntouch.html">Kontakt</a></li>
+            <li><a href="Projekte.html">Projekte</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div class="title">
+            <h1>Meine Projekte</h1>
+            <p><br>Hier findest du eine Übersicht meiner bisherigen Arbeiten.</p>
+        </div>
+        <div class="project-list">
+            <!-- Platz für Projektkarten -->
+            <div class="project-card">
+                <h2>Portfolio-Website</h2>
+                <p>Meine persönliche Website mit Html und CSS erstellt.</p>
+            </div>
+            <div class="project-card">
+                <h2>HttpStatusCodeChecker</h2>
+                <p>Ein kompaktes Projekt zur Einführung in die Fullstack-Entwicklung.</p>
+                <p>Das Frontend wurde mit Blazor realisiert, während im Backend C# zum Einsatz kam - ideal, um die Kommunikation zwischen Benutzeroberfläche und Serverlogik zu verstehen.</p>
+                <img src="HttpStatusCode.png" alt="HttpStatusCodeChecker" class="httpbild">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
